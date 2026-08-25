@@ -6,7 +6,9 @@ function getComputerChoice(computerChoice) {
 
 function getHumanChoice(humanChoice) {
     humanChoice = prompt("enter your choice (rock/paper/scissors)")
-    if (humanChoice === "paper" || "rock" || "scissors") {
-        return humanChoice
-    }
+    return humanChoice.toLowerCase()
 }
+
+let humanScore = 0
+let computerScore = 0
+
