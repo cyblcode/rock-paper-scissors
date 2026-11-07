@@ -58,7 +58,25 @@ function playRound(humanChoice, computerChoice) {
         
 }
 
-const humanSelection = getHumanChoice()
-const computerSelection = getComputerChoice()
 
-console.log(playRound(humanSelection, computerSelection))   
+
+function playGame() {
+    do {
+        const humanSelection = getHumanChoice()
+        const computerSelection = getComputerChoice()
+        
+        console.log(playRound(humanSelection, computerSelection))
+    }
+    while (humanScore < 5 & computerScore < 5);
+
+    if (humanScore = 5) {
+        console.log(`human wins! ${humanScore}-${computerScore}`)
+        return;
+    }
+    else if (computerScore = 5) {
+        console.log(`computer wins! ${humanScore}-${computerScore}`)
+        return;
+    }
+}
+
+console.log(playGame())
