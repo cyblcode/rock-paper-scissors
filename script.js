@@ -31,6 +31,7 @@ let computerScore = 0
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
         console.log("tie")
+        console.log(`human: ${humanScore} /// computer: ${computerScore}`)
     }
     else if (humanChoice == "rock" & computerChoice == "scissors") {
         console.log("player wins, rock beats paper")
