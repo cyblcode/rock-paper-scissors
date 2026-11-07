@@ -12,7 +12,7 @@ function getComputerChoice() {
 }
 
 function getHumanChoice() {
-    move = prompt("enter your move")
+    move = prompt("enter your move (rock/paper/scissors)")
     move = move.toLowerCase()
     if (move == "rock") {
         return "rock"
