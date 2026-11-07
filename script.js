@@ -34,19 +34,19 @@ function playRound(humanChoice, computerChoice) {
     }
     else if (humanChoice == "rock" & computerChoice == "scissors") {
         console.log("player wins, rock beats paper")
-        humanScore = humanScore++;
+        humanScore++;
         console.log(`human: ${humanScore} /// computer: ${computerScore}`)
     }
 
     else if (humanChoice == "paper" & computerChoice == "rock") {
         console.log("player wins, paper beats rock")
-        humanScore = humanScore++;
+        humanScore++;
         console.log(`human: ${humanScore} /// computer: ${computerScore}`)
     }
 
     else if (humanChoice == "scissors" & computerChoice == "paper") {
         console.log("player wins, scissors beats paper")
-        humanScore = humanScore++;
+        humanScore++;
         console.log(`human: ${humanScore} /// computer: ${computerScore}`)
     }
 
